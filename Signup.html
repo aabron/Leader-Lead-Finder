@@ -10,20 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeadFinder</title>
     <link rel="stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/80f57ab177.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap" rel="stylesheet">
 
     <title>Sign Up Page </title>
 
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="app.js"> </script>
+    <script src="Input.js"> </script>
+    <script src="signUp.js"> </script>
+
 </head>
 
 <body>
-    <nav class= "navbar">
-        <div class = "navbar__container">
+    <nav class="navbar">
+        <div class="navbar__container">
             <a href="/" id="navbar__logo"><i class="fas fa-thin fa-archway"></i>Leader</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -33,24 +39,24 @@
             <ul class="navbar__menu">
                 <li class="navbar__item">
                     <a href="/" class="navbar__links">
-                    Home
+                        Home
                     </a>
                 </li>
                 <li class="navbar__item">
                     <a href="/leadfinder.html" class="navbar__links">
-                    Lead Finder
+                        Lead Finder
                     </a>
                 </li>
                 <li class="navbar__item">
                     <a href="/about.html" class="navbar__links">
-                    About
+                        About
                     </a>
                 </li>
                 <li class="navbar__btn">
                     <a href="/Signup.html" class="button">Sign up</a>
                 </li>
             </ul>
-        </div>   
+        </div>
     </nav>
 
     <div class="main">
@@ -62,6 +68,9 @@
                     <div class="form-item-username">
                         <input type="text" name="firstName" id="firstName" placeholder="First Name">
                         <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="form-item">
+                        <input type="username" name="username" id="username" placeholder="username">
                     </div>
 
                     <div class="form-item">
@@ -83,10 +92,10 @@
                     </div>
 
                     <div class="form-btns">
-                        <button class="signup" type="submit" disabled>Sign Up</button>
-                        <div class="options">
-                            Already have an account? <a href="Login.html">Login here</a>
-                        </div>
+                        <button id="createButton" type="button" class="signup" disabled>Sign Up</button>
+                    </div>
+                    <div class="options">
+                        Already have an account? <a href="Login.html">Login here</a>
                     </div>
 
                 </form>
@@ -105,11 +114,11 @@
                     <a href="/">Join Us</a>
                 </div>
                 <div class="footer__links--items">
-                  <h2>Contact Us</h2>
-                  <a href="">Email Us</a>
-                  <a href="">Call Us</a>
-                  <a href="">FAQ</a>
-              </div>
+                    <h2>Contact Us</h2>
+                    <a href="">Email Us</a>
+                    <a href="">Call Us</a>
+                    <a href="">FAQ</a>
+                </div>
             </div>
         </div>
         <div class="social__media">
@@ -119,20 +128,19 @@
                 </div>
                 <p class="website__right">©Leader 2022. All Rights Reserved</p>
                 <div class="social__icons">
-                  <a href="/" class="social__icons--link" target= "_blank">
-                      <i class="fab fa-facebook"></i>
-                      <i class="fab fa-instagram"></i>
-                      <i class="fab fa-twitter"></i>
-                  </a>
-              </div>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-            
+
         </div>
     </div>
-  
-    <script src="app.js"> </script>
-    <script src="Input.js"> </script>
-    
+
+
+
 
 </body>
 
