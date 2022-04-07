@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "parse": "^3.4.1"
+  }
+}
