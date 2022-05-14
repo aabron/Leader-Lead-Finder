@@ -10,10 +10,12 @@ const pwd_format = document.querySelector(".pwd-format");
 const passwordPattern = /^[a-zA-Z0-9]{8,15}$/
 
 password.addEventListener('focusin', () => {
+
     pwd_format.style.display = 'block';
 
     // now lets check the password entered by the user
     password.addEventListener('keyup', () => {
+
         if (passwordPattern.test(password.value)) {
             password.style.borderColor = 'green' // if password pattern matches the border of password input will ne green
             pwd_format.style.color = 'green'

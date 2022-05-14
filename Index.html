@@ -1,115 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeadFinder</title>
-    <link rel="stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/80f57ab177.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class= "navbar">
-    <div class = "navbar__container">
-        <a href="/" id="navbar__logo"><i class="fas fa-thin fa-archway"></i>LeadR</a>
+    <link rel="stylesheet" href="Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/80f57ab177.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"
+          ><i class="fas fa-thin fa-archway"></i>Leader</a
+        >
         <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/" class="navbar__links">
-                Home
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="/leadfinder.html" class="navbar__links">
-                Lead Finder
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a href="/about.html" class="navbar__links">
-                About
-                </a>
-            </li>
-            <li class="navbar__btn">
-                <a href="/Signup.html" class="button">Sign up</a>
-            </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="leadfinder.html" class="navbar__links"> Lead Finder </a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links"> About </a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links"> Leaders Eye </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="Signup.html" class="button">Sign up</a>
+          </li>
         </ul>
-    </div>   
-  </nav>
-  <div class="main">
-      <div class="main__container">
-          <div class="main__content">
-              <h1>LeadR, </h1>
-              <h2>Simplifying Real Estate</h2>
-              <p>Do Things the Easy Way.</p>
-              <button class="main__btn">
-                  <a href="/"> Get Started </a>
-              </button>
-          </div>
-          <div class="main__img--container">
-              <img src="images/pic1.svg" alt="pic" id="main__img">
-          </div>
       </div>
-  </div>
+    </nav>
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Leader,</h1>
+          <h2>Simplifying Real Estate</h2>
+          <p>Do Things the Easy Way.</p>
+          <button class="main__btn">
+            <a href="Signup.html"> Get Started </a>
+          </button>
+        </div>
+        <div class="main__img--container">
+          <svg
+            id="eUZ3dEPR9vg1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 640 480"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            width="640"
+            height="480"
+          >
+            <g transform="matrix(.476856 0 0 0.534284 119.601266 231.498244)">
+              <path
+                d="M731.57189,357.32634c0,34.66808-54.18983,136.907-85.26017,192.6776-4.291467,7.705661-12.419745,12.482652-21.23983,12.482652s-16.948363-4.776991-21.23983-12.482652c-31.07034-55.77059-85.26017-158.00952-85.26017-192.6776c0-48.60106,47.68168-88,106.5-88s106.5,39.39894,106.5,88Z"
+                transform="matrix(1.899752 0 0 2.045473-1035.708872-729.758447)"
+                fill="#6c63ff"
+                class="svg-elem-1"
+              ></path>
+              <ellipse
+                rx="29.0993"
+                ry="59.3744"
+                transform="translate(180.872 328.665)"
+                fill="#e6e6e6"
+                class="svg-elem-2"
+              ></ellipse>
+              <path
+                d="M363.30943,661.99829c-11.65458-69.92526-.11734-139.59789.00056-140.29293l2.267.384c-.11734.69168-11.58834,69.99825.00056,139.53165Z"
+                transform="translate(-179.75-236.147)"
+                fill="#3f3d56"
+                class="svg-elem-3"
+              ></path>
+              <rect
+                width="29.8414"
+                height="2.29972"
+                rx="0"
+                ry="0"
+                transform="matrix(.881785-.471652 0.471652 0.881785 180.177455 329.972671)"
+                fill="#3f3d56"
+                class="svg-elem-4"
+              ></rect>
+              <rect
+                width="2.29972"
+                height="29.8424"
+                rx="0"
+                ry="0"
+                transform="matrix(.471904-.88165 0.88165 0.471904 152.405859 324.975797)"
+                fill="#3f3d56"
+                class="svg-elem-5"
+              ></rect>
+              <rect
+                width="47.694"
+                height="165.095"
+                rx="0"
+                ry="0"
+                transform="translate(720.059 3.9629)"
+                fill="#3f3d56"
+                class="svg-elem-6"
+              ></rect>
+              <polygon
+                points="799.25,138 683.25,0 450.404,2.129 309.156,139.707 312.01,141.542 310.991,141.542 310.991,427.706 798.937,427.706 798.937,141.542 799.25,138"
+                fill="#3f3d56"
+                class="svg-elem-7"
+              ></polygon>
+              <polygon
+                points="683.371,0.294 538.455,170.193 538.455,427.706 798.937,427.706 798.937,137.873 683.371,0.294"
+                fill="#fff"
+                class="svg-elem-8"
+              ></polygon>
+              <rect
+                width="53.1972"
+                height="47.0202"
+                rx="0"
+                ry="0"
+                transform="translate(643.015 285.298)"
+                fill="#3f3d56"
+                class="svg-elem-9"
+              ></rect>
+              <rect
+                width="53.1972"
+                height="46.2745"
+                rx="0"
+                ry="0"
+                transform="translate(643.015 203.911)"
+                fill="#3f3d56"
+                class="svg-elem-10"
+              ></rect>
+              <rect
+                width="53.1972"
+                height="47.0202"
+                rx="0"
+                ry="0"
+                transform="translate(643.015 285.298)"
+                fill="#fff"
+                class="svg-elem-11"
+              ></rect>
+              <rect
+                width="53.1972"
+                height="46.2745"
+                rx="0"
+                ry="0"
+                transform="translate(643.015 203.911)"
+                fill="#fff"
+                class="svg-elem-12"
+              ></rect>
+              <path
+                d="M682.07942,655.46236c0,0,1.14042-23.89608,24.51916-21.11849"
+                transform="translate(-179.75-236.147)"
+                fill="#e6e6e6"
+                class="svg-elem-13"
+              ></path>
+              <circle
+                r="11.7009"
+                transform="translate(495.724 384.874)"
+                fill="#fff"
+                class="svg-elem-14"
+              ></circle>
+              <rect
+                width="3.30288"
+                height="23.1202"
+                rx="0"
+                ry="0"
+                transform="translate(493.82 404.578)"
+                fill="#e6e6e6"
+                class="svg-elem-15"
+              ></rect>
+              <ellipse
+                rx="56.9148"
+                ry="116.129"
+                transform="translate(110.955 237.096)"
+                fill="#fff"
+                class="svg-elem-16"
+              ></ellipse>
+              <path
+                d="M297.04464,663.14809c-22.76458-136.5853-.22962-272.67317.00057-274.03181l2.267.384c-.22962,1.35528-22.69834,137.0771.00056,273.27052Z"
+                transform="translate(-179.75-236.147)"
+                fill="#3f3d56"
+                class="svg-elem-17"
+              ></path>
+              <rect
+                width="58.3676"
+                height="2.29972"
+                rx="0"
+                ry="0"
+                transform="matrix(.881785-.471652 0.471652 0.881785 110.114375 240.622744)"
+                fill="#3f3d56"
+                class="svg-elem-18"
+              ></rect>
+              <rect
+                width="2.29972"
+                height="58.3676"
+                rx="0"
+                ry="0"
+                transform="matrix(.471896-.881654 0.881654 0.471896 55.79731 228.912371)"
+                fill="#3f3d56"
+                class="svg-elem-19"
+              ></rect>
+              <ellipse
+                rx="77.8835"
+                ry="158.914"
+                transform="translate(245.754 167.201)"
+                fill="#fff"
+                class="svg-elem-20"
+              ></ellipse>
+              <path
+                d="M434.59671,663.14809c-31.1399-186.83717-.3144-372.9922.00056-374.85051l2.267.384c-.3144,1.85494-31.07366,187.64393.00056,374.08922Z"
+                transform="translate(-179.75-236.147)"
+                fill="#3f3d56"
+                class="svg-elem-21"
+              ></path>
+              <rect
+                width="79.8713"
+                height="2.29972"
+                rx="0"
+                ry="0"
+                transform="matrix(.881785-.471652 0.471652 0.881785 244.803088 172.399752)"
+                fill="#3f3d56"
+                class="svg-elem-22"
+              ></rect>
+              <rect
+                width="2.29972"
+                height="79.8713"
+                rx="0"
+                ry="0"
+                transform="matrix(.471885-.88166 0.88166 0.471885 170.473919 155.628024)"
+                fill="#3f3d56"
+                class="svg-elem-23"
+              ></rect>
+              <rect
+                width="840.5"
+                height="2"
+                rx="0"
+                ry="0"
+                transform="translate(0 425.813)"
+                fill="#3f3d56"
+                class="svg-elem-24"
+              ></rect>
+              <rect
+                width="53.1972"
+                height="47.0202"
+                rx="0"
+                ry="0"
+                transform="translate(406.602 272.821)"
+                fill="#3f3d56"
+                class="svg-elem-25"
+              ></rect>
+              <rect
+                width="53.1972"
+                height="46.2745"
+                rx="0"
+                ry="0"
+                transform="translate(406.602 191.434)"
+                fill="#3f3d56"
+                class="svg-elem-26"
+              ></rect>
+              <rect
+                width="53.1972"
+                height="47.0202"
+                rx="0"
+                ry="0"
+                transform="translate(406.602 272.821)"
+                fill="#fff"
+                class="svg-elem-27"
+              ></rect>
+              <rect
+                width="53.1972"
+                height="46.2745"
+                rx="0"
+                ry="0"
+                transform="translate(406.602 191.434)"
+                fill="#fff"
+                class="svg-elem-28"
+              ></rect>
+              <circle
+                r="58"
+                transform="matrix(1.872822 0 0 1.625952 148.491155-13.384738)"
+                fill="#fff"
+                class="svg-elem-29"
+              ></circle>
+            </g>
+          </svg>
 
-  <div class="services">
-      <h1>Tired of Spending Hours Staring at Your Computer?</h1>
-      <div class="services__container">
-          <div class="services__card">
-              <h2>Find Leads With Ease</h2>
-              <p>With our automatic, Zillow powered, lead generator</p>
-              <button>Find Leads</button>
-          </div>
-          <div class="services__card">
-            <h2>Automate your Work</h2>
-            <p>Our program automatically messages the seller for you</p>
-            <button>About</button>
         </div>
       </div>
-  </div>
+    </div>
 
-  <div class="footer__container">
+    <div class="services">
+      <h1>Tired of Spending Hours Staring at Your Computer?</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <img src="images/pic6.svg" alt="pic" id="main__img" />
+          <h2>Find Leads With Ease</h2>
+
+          <button class="btn_1">
+            <a href="/LeadFinder.html">Find Leads</a>
+          </button>
+        </div>
+        <div class="services__card__second">
+          <h2>Automate your Work</h2>
+          <img src="images/pic7.svg" alt="pic" id="main__img" />
+          <button class="btn_2">
+            <a href="/About.html">About</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__container">
       <div class="footer__links">
-          <div class="footer__links--wrapper">
-              <div class="footer__links--items">
-                  <h2>About Us</h2>
-                  <a href="/">Who We Are</a>
-                  <a href="/">How it Works</a>
-                  <a href="/">Join Us</a>
-              </div>
-              <div class="footer__links--items">
-                <h2>Contact Us</h2>
-                <a href="">Email Us</a>
-                <a href="">Call Us</a>
-                <a href="">FAQ</a>
-            </div>
+        <div class="footer__links--wrapper">
+          <div class="footer__links--items">
+            <h2>About Us</h2>
+            <a href="/">Who We Are</a>
+            <a href="/">How it Works</a>
+            <a href="/">Join Us</a>
           </div>
+          <div class="footer__links--items">
+            <h2>Contact Us</h2>
+            <a href="">Email Us</a>
+            <a href="">Call Us</a>
+            <a href="">FAQ</a>
+          </div>
+        </div>
       </div>
       <div class="social__media">
-          <div class="social__media--wrap">
-              <div class="footer__logo">
-                  <a href="/" id="footer__logo"><i class="fas fa-archway"></i>Leader</a>
-              </div>
-              <p class="website__right">©Leader 2022. All Rights Reserved</p>
-              <div class="social__icons">
-                <a href="/" class="social__icons--link" target= "_blank">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"
+              ><i class="fas fa-archway"></i>Leader</a
+            >
           </div>
-          
+          <p class="website__right">©Leader 2022. All Rights Reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icons--link" target="_blank">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <script src="app.js"> </script>
-</body>
+    <script src="app.js"></script>
+    <script src="Animation.js"></script>
+  </body>
 </html>

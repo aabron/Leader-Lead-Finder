@@ -1,4 +1,7 @@
 // Create a new User
+Parse.initialize("sVdIam7tIuOg3Zu7ZWzKOCrFrbRjRpCIoLiE1GIZ", "DEflySFO8oBIY6OqkCTYoWnXO8v7nPKH8NldG4Yn"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+    Parse.serverURL = "https://parseapi.back4app.com/";
+
 async function createParseUser() {
     // Creates a new Parse "User" object, which is created by default in your Parse app
     let user = new Parse.User();
@@ -10,11 +13,8 @@ async function createParseUser() {
         // Call the save method, which returns the saved object if successful
         user = await user.save();
         if (user !== null) {
-            // Notify the success by getting the attributes from the "User" object, by using the get method (the id attribute needs to be accessed directly, though)
-            alert(
-                `New object created with success! ObjectId: ${user.id
-                }, ${user.get("username")}`
-            );
+            // Redierct to leadfinder
+            location.href = "LeadFinder.html";
         }
     } catch (error) {
         alert(`Error: ${error.message}`);
@@ -22,6 +22,6 @@ async function createParseUser() {
 }
 
 // Add on click listener to call the create parse user function
-document.getElementById("createUserButton").addEventListener("click", async function () {
+document.getElementById("createButton").addEventListener("click", async function () {
     createParseUser();
 });
